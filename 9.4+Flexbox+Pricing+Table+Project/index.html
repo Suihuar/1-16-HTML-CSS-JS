@@ -12,9 +12,27 @@
       body {
         font-family: "Sono", sans-serif;
       }
+      .pricing-container {
+        display: flex;
+        height: 100vh;
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .pricing-plan {
+        flex-basis: 250px;
+        height: 180px;
+        background-color: gray;
+        padding: 20px;
+        border-radius: 5px;
+      }
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
+      @media (max-width: 700px) {
+        .pricing-container {
+          display: flex;
+          flex-direction: column;
+        }
       }
     </style>
   </head>
